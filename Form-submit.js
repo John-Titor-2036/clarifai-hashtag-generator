@@ -1,5 +1,32 @@
-// FACEBOOK
+// Twitter
 // Jerry Zhou and Samarth Madduru
+/*
+function photoIncluded(){
+	var addedPhotos = document.getElementsByTagName("img");
+	for(var i = 0; i < addedPhotos.length; i++){
+		var addedPhoto = addedPhotos[i];
+		if(addedPhoto.alt === FBPhrase){
+			return addedPhoto.getAttribute("src");
+		}
+	}
+	return null;
+}
+*/
+$("#tweet-box-home-timeline").on('click', function(){
+	console.log("twitter test");
+/*
+	var result = photoIncluded();
+	if(result != null)
+		run(result, fillTextBox);
+	*/
+});
+
+
+
+
+
+
+/*
 function photoIncluded(){
 	var addedPhotos = document.getElementsByTagName("img");
 	for(var i = 0; i < addedPhotos.length; i++){
@@ -40,3 +67,4 @@ function fillTextBox(){
 	
 }
 console.log("Hooo");
+*/

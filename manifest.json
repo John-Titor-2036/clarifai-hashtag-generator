@@ -5,7 +5,7 @@
 	"content_scripts": [
 	{
 		"matches": [
-			"https://www.facebook.com/*"
+			"<all_urls>"
 		],
 		"js": ["jquery-2.2.0.min.js", "bililiterange.js", "jquery.sendkeys.js", "keys.js", "clarifai.js","Form-submit.js"]
 	}
