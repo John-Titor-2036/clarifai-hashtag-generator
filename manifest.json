@@ -1,13 +1,13 @@
 {
 	"manifest_version": 2,
 	"name": "Clarifai Hastag Generator",
-	"version": "0.9",
+	"version": "1.9",
 	"content_scripts": [
 	{
 		"matches": [
 			"https://www.facebook.com/*"
 		],
-		"js": ["jquery-2.2.0.min.js", "bililiterange.js", "jquery.sendkeys.js", "clarifai.js", "keys.js", "Form-submit.js"]
+		"js": ["jquery-2.2.0.min.js", "bililiterange.js", "jquery.sendkeys.js", "keys.js", "clarifai.js","Form-submit.js"]
 	}
 	],
 	"browser_action": {
