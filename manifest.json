@@ -7,7 +7,7 @@
 		"matches": [
 			"https://www.facebook.com/*"
 		],
-		"js": ["jquery-2.2.0.min.js", "bililiterange.js", "jquery.sendkeys.js", "clarifai.js", "Form-submit.js"]
+		"js": ["jquery-2.2.0.min.js", "bililiterange.js", "jquery.sendkeys.js", "clarifai.js", "keys.js", "Form-submit.js"]
 	}
 	],
 	"browser_action": {

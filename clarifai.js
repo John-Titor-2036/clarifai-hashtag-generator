@@ -2,8 +2,8 @@ var tags = [];
 function getCredentials(cb) {
   var data = {
     'grant_type': 'client_credentials',
-    'client_id': "4fHDiTJ5XH8AMdvSUp-bT8_Utpn6HrQ10VSCnoFq",
-    'client_secret': "MmqE8sqx-NQAYsqtnLXdyHFzqvsBn_JufCANEnxH"
+    'client_id': CLIENT_ID,
+    'client_secret': CLIENT_SECRET
   };
 
   return $.ajax({

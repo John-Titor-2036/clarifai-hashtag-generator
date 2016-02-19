@@ -4,7 +4,7 @@ function photoIncluded(){
 	var addedPhotos = document.getElementsByTagName("img");
 	for(var i = 0; i < addedPhotos.length; i++){
 		var addedPhoto = addedPhotos[i];
-		if(addedPhoto.alt == "Jerry Zhou's photo.")
+		if(addedPhoto.alt == FBPhrase)
 			return true;
 	}
 	return false;
