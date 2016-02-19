@@ -12,9 +12,14 @@ function photoIncluded(){
 	return null;
 }
 */
+
 $("#tweet-box-home-timeline").on('click', function(){
-	console.log("twitter test");
-/*
+	
+	// Validate current website
+	if(document.location.host == "twitter.com"){
+		$("#tweet-box-home-timeline").sent("ASDFASDFASDFASDFASDFASDAFDFSA");
+	}
+	/*
 	var result = photoIncluded();
 	if(result != null)
 		run(result, fillTextBox);
