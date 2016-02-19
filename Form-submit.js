@@ -1,5 +1,5 @@
 // FACEBOOK
-// Jerry Zhou
+// Jerry Zhou and Samarth Madduru
 function photoIncluded(){
 	var addedPhotos = document.getElementsByTagName("img");
 	for(var i = 0; i < addedPhotos.length; i++){
