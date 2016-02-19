@@ -26,17 +26,12 @@ function fillTextBox(){
 		}
 	}
 	
-	if(tags.length > 7){
-		for(var i = 0; i < 7; i++){
-			var tag = tags[i];
-			$("textarea").sendkeys("#" + tag + " ");
-		}
-	}else{
-		for(var i = 0; i < tags.length; i++){
-			var tag = tags[i];
-			$("textarea").sendkeys("#" + tag + " ");
-		}
+
+	for(var i = 0; i < tags.length; i++){
+		var tag = tags[i];
+		$("textarea").sendkeys("#" + tag + " ");
 	}
+	
 	
 }
 console.log("Hooo");
