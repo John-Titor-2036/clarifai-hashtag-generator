@@ -1,6 +1,7 @@
 // Twitter
 // Jerry Zhou and Samarth Madduru
 var site = document.location.host;
+var clicked = false;
 
 function photoIncluded() {
     var addedPhotos = document.getElementsByTagName("img");
@@ -25,14 +26,16 @@ function photoIncluded() {
 					var extension = file.innerHTML;
                     extension = extension.substring(extension.lastIndexOf('.'));
                     // Only process image files.
-                    if(extension === ".jpg" && file.className === "filename"){
+                    if(extension.toLowerCase() === ".jpg" && file.className === "filename"){
 						var data = canvas.toDataURL("images/jpeg");
 						data = data.substring(data.indexOf(",")+1);
 						return data;
-					}else if(extension === ".png" && file.className === "filename"){
+					}else if(extension.toLowerCase() === ".png" && file.className === "filename"){
 						var data = canvas.toDataURL("images/png");
 						data = data.substring(data.indexOf(",")+1);
 						return data;
+					}else{
+						alert("Photo is extension: " + extension + ". And is not currently supported.")
 					}
                 }
 
@@ -93,8 +96,13 @@ $("#tweet-box-home-timeline").on('click', function() {
     // Validate current website
     if (document.location.host == "twitter.com") {
         var result = photoIncluded();
-        if (result != null)
+        if (result != null && clicked==false){
+			clicked = true;
             run(result, fillTextBox);
+		}
+		else{
+			clicked = false;
+		}
     }
 
 });

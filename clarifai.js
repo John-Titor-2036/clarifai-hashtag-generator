@@ -45,8 +45,9 @@ function parseResponse(resp, callback) {
     var tags;
     if (resp.status_code === 'OK') {
         var results = resp.results;
-        var tags = results[0].result.tag.classes;
-        callback(tags);
+        var tags = results[0].result.tag.classes; 
+		chrome.runtime.sendMessage(tags);
+		callback(tags);		
     } else {
         console.log('Sorry, something is wrong.');
     }

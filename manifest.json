@@ -10,6 +10,9 @@
 		"js": ["jquery-2.2.0.min.js", "bililiterange.js", "jquery.sendkeys.js", "keys.js", "clarifai.js","Form-submit.js"]
 	}
 	],
+	"background" : {
+		"scripts" : ["background.js"]
+	},
 	"browser_action": {
 		"default_icon": "icon.png",
 		"default_title": "Clarifai Hashtag Generator"
