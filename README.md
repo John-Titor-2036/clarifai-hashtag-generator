@@ -1,4 +1,5 @@
-HashtAI
-Automatically add hastags to social media posts based on picture
-<b><i>Seconds matter</i></b>
-<i>Created By: Samarth Madduru and Jerry Zhou</i>
+<b>HashtAI</b><i> Seconds matter</i>
+</br>
+<b>Description: </b>Automatically add hastags to social media posts based on picture
+</br>
+<i><b>Created by: </b>Jerry Zhou and Samarth Madduru</i>
